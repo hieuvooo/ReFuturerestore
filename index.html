@@ -4,7 +4,7 @@
 		<title>Downgrade iOS khoá sign với Futurerestore | Hieuvo.me</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/main.css"/>
 		<link href="https://raw.githubusercontent.com/hieuvooo/hieuvooo.github.io/master/favicon.ico" rel="shortcut icon">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
@@ -53,9 +53,6 @@
 								        <li>Và tất nhiên điện thoại bạn phải Jailbreak.</li>
 										<li>Mình sẽ không chịu trách nhiệm nếu bạn ko làm đúng theo hướng dẫn của mình.</li>
   				                    </ul>
-									<h2>Download</h2>
-									<a href="http://bit.ly/2zzgGJY" class="button primary icon fa-download" target="_blank">Futurerestore</a><br><br>
-									<a href="http://bit.ly/2NKGTbs" class="button primary icon fa-download" target="_blank">iOS</a>
 								</div>
 							</div>
 						</section>
@@ -90,66 +87,90 @@
 							</div>
 							<h1 class="major"></h1>
 							<h2>1. Chuẩn bị</h2>
+							
 							<p>1.1 Tạo một Folder tên là <strong>Futurerestore</strong>. Đây là thư mục bạn để tất cả các files để dễ thuận tiện trong quá trình làm</p>
+							
+							<p>1.2 Tải 2 bản iPSW một firmware đang sign mới nhất và một firmware bạn muốn <strong>Futurerestore</strong></p>
+							<a href="http://bit.ly/2NKGTbs" class="button primary icon fa-download" target="_blank">iOS</a>
+							<br><br>
+							
+							<p>1.3 Bỏ cả 2 vào thư mục <strong>Futurerestore</strong></p>
+							
+							<p>1.4 Đổi đuôi firmware mới nhất từ <strong>".ipsw"</strong> thành <strong>".zip"</strong></p>
+							<span class="image fit"><img src="images/1.4.gif"/></span><br>
+							
+							<p>1.5 Mở zip và copy file <strong>BuildManifest.plist</strong> ra ngoài</p>
+							<span class="image fit"><img src="images/1.5.gif"/></span><br>
+							
+							<p>1.6 Vào trang <a href="http://bit.ly/2JrD8UV"><strong>The iPhone Wiki</strong></a> kéo xuống tới phần iPhone của bạn và tìm số baseband của bản mới nhất <br>→ Ví dụ firmware 11.4.1 mới nhất của iP5S có baseband là <strong>8.55.00</strong></p>
+							<span class="image fit"><img src="images/1.6.PNG"/></span><br>
+							
+							<p>1.7 Vào <strong>Firmware</strong> chọn theo phiên bản baseband của bạn có đuôi là <strong>".bbfw"</strong> và copy ra ngoài <br>→ Ví dụ 11.4.1 có baseband là <strong>8.55.00</strong> thì mình sẽ chọn <strong>Mav7Mav8-8.55.00.Release.bbfw</strong></p>
+							<span class="image fit"><img src="images/1.7.gif"/></span><br>
+							
+							<p>1.8 Tải <a href="https://apple.co/2mnsRA3"><strong>Battery Memory System Status Monitor</strong></a></p>
+							<span class="image fit"><img src="images/1.8.JPG"/></span><br>
+							
+							<p>1.9 Mở ứng dụng và chọn phần <strong>System</strong> ngay trên cùng, bạn sẽ thấy <strong>Device Model</strong> của bạn</p>
+							<span class="image fit"><img src="images/1.9.JPG"/></span><br>
+							
+							<p>1.10 Vào tiếp <strong>all_flash</strong>, kéo xuống dưới cùng bạn sẽ thấy một loạt file có tên là <strong>sep-firmware</strong>, copy file sep có đuôi <strong>".imp4"</strong> trùng với Device model của bạn ở <strong>bước 1.9</strong></p>
+							<span class="image fit"><img src="images/1.10.gif"/></span><br>
+							
+							<p>1.11 Tải <strong>shsh</strong> của phiên bản bạn muốn Futurerestore (Nếu bạn dùng tsschecker để lưu shsh thì vào <strong>tsssaver</strong> để check xem shsh của bạn có valid hay không</p>
+							<a href="https://tsssaver.1conan.com/check.php" class="button primary" target="_blank">Kiểm tra SHSH</a><br><br>
+							<span class="image fit"><img src="images/1.11.gif"/></span><br>
+							
+							<p>1.12 Tải Futurerestore fork của encounter (Nếu bạn tải bản chính chủ của tihmstar thì nên xoá đi vì nó không hoạt trên iOS 11)</p>
+							<a href="http://bit.ly/2zzgGJY" class="button primary icon fa-download" target="_blank">Futurerestore</a><br><br>
+							<span class="image fit"><img src="images/1.12.PNG"/></span><br>
+							
+							<p>1.13 Copy shsh và extract Futurerestore fork đã tải vào Futurerestore</p>
+							<span class="image fit"><img src="images/1.13.PNG"/></span><br>
+							
+							<p>1.14 Xoá file zip và đổi tên file để dễ phân biệt</p>
+							<span class="image fit"><img src="images/1.14.PNG"/></span><br>
+							
+							<h2>2. Set nonce</h2>
+							
+							<p>2.1 Mở file shsh của bạn dưới notepad, <strong>ctrl + f</strong> rồi gõ <strong>"gene"</strong>, tìm đến "<strong>&lt;string&gt;0x......&lt;/string&gt;</strong>"<br>→ Ví dụ shsh 11.3.1 của mình có nonce là <strong>0xf44116d95df08a43</strong></p>
+							<span class="image fit"><img src="images/2.1.gif"/></span><br>
+							
+							<p>2.2 Set nonce</p>
+							<ul>
+							    <li>iOS 10 → 10.2.1: Mở mterminal gõ <code>nvram com.apple.System.boot-nonce=0x.....  </code></li><br>
+								<pre><code>Hieus-iphone:~ mobile$ su <br>password: alpine <br>Hieus-iphone:/var/mobile root# nvram com.apple.System.boot-nonce=0x.....'  </code></pre>
+								<p>
+				                Ví dụ shsh của mình có generator là <strong>0x66fd9ae6a407ddfa</strong> thì sẽ ghi là <strong>nvram com.apple.System.boot-nonce=0x66fd9ae6a407ddfa</strong>
+				                </p>
+								<span class="image fit"><img src="images/2.2.JPG"/></span>
+								<p>
+				                Gõ <strong>nvram -p</strong> để check lại
+				                </p>
+								<span class="image fit"><img src="images/2.2.1.JPG"/></span>
+								
+								<li>iOS 10.3 → 10.3.3: Tải <a href="https://github.com/arx8x/v0rtexNonce/releases"><strong>v0rtexNonce</strong></a> cài qua cydia impactor rồi mở app ghi đoạn generator của bạn vào</li>
+								
+								<li>iOS 11 → 11.1.2: Tải <a href="https://github.com/julioverne/NonceSet112"><strong>NonceSet112</strong></a> rồi làm tương tự như 10.3 → 10.3.3</li>
+								
+								<li>iOS 11.2 → 11.3.1/11.4b3: Tải <a href="http://pwn20wnd.science/noncereboot1131UI/noncereboot1131UI.ipa"><strong>noncereboot1131UI</strong></a> hoặc <strong>electra1131</strong> rồi làm tương tự như bước trên</li>
+							</ul>	
+							<span class="image fit"><img src="images/a.gif"/></span><br>
+																	
 						</div>
 					</section>
 
 				<!-- Three -->
 					<section id="three" class="wrapper style4 fade-up">
 						<div class="inner">
-							<h2>Get in touch</h2>
-							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
-							<div class="split style1">
-								<section>
-									<form method="post" action="#">
-										<div class="fields">
-											<div class="field half">
-												<label for="name">Name</label>
-												<input type="text" name="name" id="name" />
-											</div>
-											<div class="field half">
-												<label for="email">Email</label>
-												<input type="text" name="email" id="email" />
-											</div>
-											<div class="field">
-												<label for="message">Message</label>
-												<textarea name="message" id="message" rows="5"></textarea>
-											</div>
-										</div>
-										<ul class="actions">
-											<li><a href="" class="button submit">Send Message</a></li>
-										</ul>
-									</form>
-								</section>
-								<section>
-									<ul class="contact">
-										<li>
-											<h3>Address</h3>
-											<span>12345 Somewhere Road #654<br />
-											Nashville, TN 00000-0000<br />
-											USA</span>
-										</li>
-										<li>
-											<h3>Email</h3>
-											<a href="#">user@untitled.tld</a>
-										</li>
-										<li>
-											<h3>Phone</h3>
-											<span>(000) 000-0000</span>
-										</li>
-										<li>
-											<h3>Social</h3>
-											<ul class="icons">
-												<li><a href="#" class="fa-twitter"><span class="label">Twitter</span></a></li>
-												<li><a href="#" class="fa-facebook"><span class="label">Facebook</span></a></li>
-												<li><a href="#" class="fa-github"><span class="label">GitHub</span></a></li>
-												<li><a href="#" class="fa-instagram"><span class="label">Instagram</span></a></li>
-												<li><a href="#" class="fa-linkedin"><span class="label">LinkedIn</span></a></li>
-											</ul>
-										</li>
-									</ul>
-								</section>
-							</div>
+							<h2>3. Tiến hành</h2>
+							
+							<p>3.1 Shift + chuột phải chọn</p>
+							<span class="image fit"><img src="images/3.1.gif"/></span><br>
+							
+							<p>3.2 Trên Powershell (hoặc cmd) gõ</p>
+							<span class="image fit"><img src="images/12.gif"/></span><br>
+							
 						</div>
 					</section>
 
@@ -217,6 +238,5 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
 	</body>
 </html>
