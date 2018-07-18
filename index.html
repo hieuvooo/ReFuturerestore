@@ -117,11 +117,11 @@
 							<a href="https://tsssaver.1conan.com/check.php" class="button primary" target="_blank">Kiểm tra SHSH</a><br><br>
 							<span class="image fit"><img src="images/1.11.gif"/></span><br>
 							
-							<p>1.12 Tải Futurerestore fork của encounter (Nếu bạn tải bản chính chủ của tihmstar thì nên xoá đi vì nó không hoạt trên iOS 11)</p>
+							<p>1.12 Tải <strong>Futurerestore fork</strong> của <strong>encounter</strong> (Nếu bạn tải bản chính chủ của tihmstar thì nên xoá đi vì nó không hoạt trên iOS 11)</p>
 							<a href="http://bit.ly/2zzgGJY" class="button primary icon fa-download" target="_blank">Futurerestore</a><br><br>
 							<span class="image fit"><img src="images/1.12.PNG"/></span><br>
 							
-							<p>1.13 Copy shsh và extract Futurerestore fork đã tải vào Futurerestore</p>
+							<p>1.13 Copy <strong>shsh</strong> và extract <strong>Futurerestore fork</strong> đã tải vào <strong>Futurerestore</strong></p>
 							<span class="image fit"><img src="images/1.13.PNG"/></span><br>
 							
 							<p>1.14 Xoá file zip và đổi tên file để dễ phân biệt</p>
@@ -132,7 +132,7 @@
 							<p>2.1 Mở file shsh của bạn dưới notepad, <strong>ctrl + f</strong> rồi gõ <strong>"gene"</strong>, tìm đến "<strong>&lt;string&gt;0x......&lt;/string&gt;</strong>"<br>→ Ví dụ shsh 11.3.1 của mình có nonce là <strong>0xf44116d95df08a43</strong></p>
 							<span class="image fit"><img src="images/2.1.gif"/></span><br>
 							
-							<p>2.2 Set nonce</p>
+							<p><strong>2.2 Set nonce</strong></p>
 							<ul>
 							    <li>iOS 10 → 10.2.1: Mở MTerminal hoặc NewTerm gõ</li><br>
 								<pre><code>Hieus-iphone:~ mobile$ su <br>password: alpine <br>Hieus-iphone:/var/mobile root# nvram com.apple.System.boot-nonce=0x.....'  </code></pre>
@@ -149,6 +149,21 @@
 					</section>
 					
 					<section id="one" class="wrapper style2 spotlights">
+						<section>
+							<a class="image"><img src="images/2.2.1.jpg" data-position="center center"/></a>
+							<div class="content">
+								<div class="inner">
+									<h2>iOS 10 → 10.2.1</h2>
+									<p>Mở MTerminal hoặc NewTerm gõ</p>
+									<ul>
+							        	<pre><code>Hieus-iphone:~ mobile$ su <br>password: alpine <br>Hieus-iphone:/var/mobile root# nvram com.apple.System.boot-nonce=0x.....'  </code></pre>
+							        	<p>Ví dụ shsh của mình có generator là <strong>0x66fd9ae6a407ddfa</strong> thì sẽ ghi là <strong>nvram com.apple.System.boot-nonce=0x66fd9ae6a407ddfa</strong></p>
+							        	<p>Gõ <strong>nvram -p</strong> để check lại</p>
+							        </ul>
+								</div>
+							</div>
+						</section>
+						
 						<section>
 							<a class="image"><img src="images/2.2.2.jpg" data-position="center center"/></a>
 							<div class="content">
@@ -217,10 +232,9 @@
 				<section id="four" class="wrapper style1-alt fullscreen fade-up">
 						<div class="inner">
 							<h2>Get in touch</h2>
-							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
 							<div class="split style1">
 								<section>
-									<form method="post" action="#">
+									<form method="post" action="https://formspree.io/support@hieuvo.me">
 										<div class="fields">
 											<div class="field half">
 												<label for="name">Name</label>
@@ -236,7 +250,7 @@
 											</div>
 										</div>
 										<ul class="actions">
-											<li><a href="" class="button submit">Send Message</a></li>
+											<li><a href="" class="button submit" target="_blank">Send Message</a></li>
 										</ul>
 									</form>
 								</section>
