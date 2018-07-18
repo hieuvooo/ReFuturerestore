@@ -24,10 +24,8 @@
 					</nav>
 				</div>
 			</section>
-
 		<!-- Wrapper -->
 			<div id="wrapper">
-
 				<!-- Intro -->
 					<section id="intro" class="wrapper style1 fullscreen fade-up">
 						<div class="inner">
@@ -39,7 +37,6 @@
 							</ul>
 						</div>
 					</section>
-
 				<!-- One -->
 					<section id="one" class="wrapper style2 fullscreen spotlights">
 						<section>
@@ -57,7 +54,6 @@
 							</div>
 						</section>
 					</section>
-
 				<!-- Two -->
 					<section id="two" class="wrapper style3 fullscreen fade-up">
 						<div class="inner">
@@ -84,7 +80,7 @@
 									<h3>4. Tiến hành</h3>
 									<p>Kiểm trả lại và bắt đầu quá trình Futurerestore.</p>
 								</section>
-							</div>
+							</div>						
 							<h1 class="major"></h1>
 							<h2>1. Chuẩn bị</h2>
 							
@@ -138,7 +134,7 @@
 							
 							<p>2.2 Set nonce</p>
 							<ul>
-							    <li>iOS 10 → 10.2.1: Mở mterminal gõ <code>nvram com.apple.System.boot-nonce=0x.....  </code></li><br>
+							    <li>iOS 10 → 10.2.1: Mở MTerminal hoặc NewTerm gõ</li><br>
 								<pre><code>Hieus-iphone:~ mobile$ su <br>password: alpine <br>Hieus-iphone:/var/mobile root# nvram com.apple.System.boot-nonce=0x.....'  </code></pre>
 								<p>
 				                Ví dụ shsh của mình có generator là <strong>0x66fd9ae6a407ddfa</strong> thì sẽ ghi là <strong>nvram com.apple.System.boot-nonce=0x66fd9ae6a407ddfa</strong>
@@ -148,28 +144,68 @@
 				                Gõ <strong>nvram -p</strong> để check lại
 				                </p>
 								<span class="image fit"><img src="images/2.2.1.JPG"/></span>
-								
-								<li>iOS 10.3 → 10.3.3: Tải <a href="https://github.com/arx8x/v0rtexNonce/releases"><strong>v0rtexNonce</strong></a> cài qua cydia impactor rồi mở app ghi đoạn generator của bạn vào</li>
-								
-								<li>iOS 11 → 11.1.2: Tải <a href="https://github.com/julioverne/NonceSet112"><strong>NonceSet112</strong></a> rồi làm tương tự như 10.3 → 10.3.3</li>
-								
-								<li>iOS 11.2 → 11.3.1/11.4b3: Tải <a href="http://pwn20wnd.science/noncereboot1131UI/noncereboot1131UI.ipa"><strong>noncereboot1131UI</strong></a> hoặc <strong>electra1131</strong> rồi làm tương tự như bước trên</li>
-							</ul>	
-							<span class="image fit"><img src="images/a.gif"/></span><br>
-																	
+							</ul>											
 						</div>
 					</section>
-
+					
+					<section id="one" class="wrapper style2 spotlights">
+						<section>
+							<a class="image"><img src="images/2.2.2.jpg" data-position="center center"/></a>
+							<div class="content">
+								<div class="inner">
+									<h2>iOS 10.3 → 10.3.3</h2>
+									<p>Cài v0rtexNonce qua Cydia Impactor rồi mở app ghi đoạn generator của bạn vào</p>
+									<ul class="actions">
+										<li><a href="https://github.com/arx8x/v0rtexNonce/releases" class="button primary icon fa-download" target="_blank">v0rtexNonce</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+						<section>
+							<a class="image"><img src="images/2.2.3.jpg" data-position="center center"/></a>
+							<div class="content">
+								<div class="inner">
+									<h2>iOS 11 → 11.1.2</h2>
+									<p>Cài NonceSet112 qua Cydia Impactor rồi làm tương tự như 10.3 → 10.3.3</p>
+									<ul class="actions">
+										<li><a href="https://github.com/julioverne/NonceSet112" class="button primary icon fa-download" target="_blank">NonceSet112</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+						<section>
+							<a class="image"><img src="images/2.2.4.PNG" data-position="center center"/></a>
+							<div class="content">
+								<div class="inner">
+									<h2>iOS 11.2 → 11.3.1/11.4b3</h2>
+									<p>Cài noncereboot1131 hoặc electra1131 qua Cydia Impactor rồi làm tương tự như bước trên</p>
+									<ul class="actions">
+										<li><a href="http://pwn20wnd.science/noncereboot1131UI/noncereboot1131UI.ipa" class="button primary icon fa-download" target="_blank">noncereboot1131</a></li>
+										<li><a href="itms-services://?action=download-manifest&url=https://cdn.ipas.fun/plists/Electra1131_MPTCP.plist" class="button primary icon fa-download" target="_blank">electra1131</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+					</section>
 				<!-- Three -->
 					<section id="three" class="wrapper style4 fade-up">
 						<div class="inner">
 							<h2>3. Tiến hành</h2>
 							
-							<p>3.1 Shift + chuột phải chọn</p>
+							<p>3.1 Shift + chuột phải chọn Open PowerShell window here (hoặc cmd) rồi gõ <code>.\futurerestore.exe</code> để kiểm tra futurerestore có báo lỗi gì ko</p>
 							<span class="image fit"><img src="images/3.1.gif"/></span><br>
 							
-							<p>3.2 Trên Powershell (hoặc cmd) gõ</p>
-							<span class="image fit"><img src="images/12.gif"/></span><br>
+							<p>3.2 Cắm điện thoại vào máy tính, tiếp tục trên PowerShell gõ <code>.\futurerestore.exe -w -t &lt;shsh của bạn&gt;</code></p>
+							<p>Nếu <strong>"waiting for nonce"</strong> trùng với <strong>"Got ApNonce from device"</strong> thì bạn đã set nonce thành công, còn nếu dòng <strong>"Got ApNonce from device"</strong> lặp lại liên tục thì bạn đã set sai generator</p>
+							<span class="image fit"><img src="images/3.2.gif"/></span><br>
+							
+							<p>★ Đây là bước cuối cùng kiểm tra kỹ đã đủ file chưa, ko dùng dây cáp lõng hoặc không có mfi (vì cáp không có chứng chỉ mfi ko giao tiếp đc iPhone ở recovery mode), nếu xãy ra lỗi thì đừng vội restore trên itunes, tải <a href="https://www.tenorshare.com/products/reiboot.html" target="_blank">ReiBoot</a> và exit recovery mode rồi bắt đầu lại</p>
+							
+							<p>3.3 Cắm điện thoại vào máy tính, trên PowerShell gõ</p>
+							<pre><code>.\futurerestore.exe -t &lt;iOS SHSH2 blob&gt; -b &lt;Baseband file&gt; -p BuildManifest.plist -s &lt;SEP file&gt; -m BuildManifest.plist &lt;iOS IPSW File&gt;</code></pre>
+							<p>Trong đó dấu "&lt;&gt;" là tên file của bạn. Ví dụ của mình là:</p>
+							<pre><code>.\futurerestore.exe -t blob.shsh2 -b baseband.bbfw -p BuildManifest.plist -s sep.im4p -m BuildManifest.plist 11.3.1.ipsw</code></pre>
+							<p>★ Tip: khi gõ lệnh chỉ cần nhấn nút tab thì nó sẽ tự động ghi toàn bộ tên file cho mình</p>
 							
 						</div>
 					</section>
