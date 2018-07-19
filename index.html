@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Downgrade iOS khoá sign với Futurerestore | Hieuvo.me</title>
+		<title>Hieuvo.me | Downgrade iOS khoá sign với Futurerestore</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css"/>
@@ -93,7 +93,7 @@
 							<p>1.3 Bỏ cả 2 vào thư mục <strong>Futurerestore</strong></p>
 							
 							<p>1.4 Đổi đuôi firmware mới nhất từ <strong>".ipsw"</strong> thành <strong>".zip"</strong></p>
-							<span class="image fit"><img src="images/1.4.gif"/></span><br>
+							<span class="image fit"><img src="images/1.4.gif"/></span><br><!-- 60fps WOW Such frame much smooth -->
 							
 							<p>1.5 Mở zip và copy file <strong>BuildManifest.plist</strong> ra ngoài</p>
 							<span class="image fit"><img src="images/1.5.gif"/></span><br>
@@ -125,7 +125,7 @@
 							<span class="image fit"><img src="images/1.13.PNG"/></span><br>
 							
 							<p>1.14 Xoá file zip và đổi tên file để dễ phân biệt</p>
-							<span class="image fit"><img src="images/1.14.PNG"/></span><br>
+							<span class="image fit"><img src="images/1.14.gif"/></span><br>
 							
 							<h2>2. Set nonce</h2>
 							
@@ -169,7 +169,7 @@
 							<div class="content">
 								<div class="inner">
 									<h2>iOS 10.3 → 10.3.3</h2>
-									<p>Cài v0rtexNonce qua Cydia Impactor rồi mở app ghi đoạn generator của bạn vào</p>
+									<p>Cài v0rtexNonce qua Cydia Impactor hoặc Ext3nder Installer rồi mở app ghi đoạn generator của bạn vào</p>
 									<ul class="actions">
 										<li><a href="https://github.com/arx8x/v0rtexNonce/releases" class="button primary icon fa-download" target="_blank">v0rtexNonce</a></li>
 									</ul>
@@ -181,7 +181,7 @@
 							<div class="content">
 								<div class="inner">
 									<h2>iOS 11 → 11.1.2</h2>
-									<p>Cài NonceSet112 qua Cydia Impactor rồi làm tương tự như 10.3 → 10.3.3</p>
+									<p>Cài NonceSet112 qua Cydia Impactor hoặc Ext3nder Installer rồi làm tương tự như 10.3 → 10.3.3</p>
 									<ul class="actions">
 										<li><a href="https://github.com/julioverne/NonceSet112" class="button primary icon fa-download" target="_blank">NonceSet112</a></li>
 									</ul>
@@ -193,7 +193,7 @@
 							<div class="content">
 								<div class="inner">
 									<h2>iOS 11.2 → 11.3.1/11.4b3</h2>
-									<p>Cài noncereboot1131 hoặc electra1131 qua Cydia Impactor rồi làm tương tự như bước trên</p>
+									<p>Cài noncereboot1131 hoặc electra1131 qua Cydia Impactor hoặc Ext3nder Installer rồi làm tương tự như bước trên</p>
 									<ul class="actions">
 										<li><a href="http://pwn20wnd.science/noncereboot1131UI/noncereboot1131UI.ipa" class="button primary icon fa-download" target="_blank">noncereboot1131</a></li>
 										<li><a href="itms-services://?action=download-manifest&url=https://cdn.ipas.fun/plists/Electra1131_MPTCP.plist" class="button primary icon fa-download" target="_blank">electra1131</a></li>
@@ -214,7 +214,7 @@
 							<p>Nếu <strong>"waiting for nonce"</strong> trùng với <strong>"Got ApNonce from device"</strong> thì bạn đã set nonce thành công, còn nếu dòng <strong>"Got ApNonce from device"</strong> lặp lại liên tục thì bạn đã set sai generator</p>
 							<span class="image fit"><img src="images/3.2.gif"/></span><br>
 							
-							<p>★ Đây là bước cuối cùng kiểm tra kỹ đã đủ file chưa, ko dùng dây cáp lõng hoặc không có mfi (vì cáp không có chứng chỉ mfi ko giao tiếp đc iPhone ở recovery mode), nếu xãy ra lỗi thì đừng vội restore trên itunes, tải <a href="https://www.tenorshare.com/products/reiboot.html" target="_blank">ReiBoot</a> và exit recovery mode rồi bắt đầu lại</p>
+							<p>★ Đây là những bước cuối cùng kiểm tra kỹ đã đủ file chưa, ko dùng dây cáp lõng hoặc không có mfi (vì cáp không có chứng chỉ mfi ko giao tiếp đc iPhone ở recovery mode), nếu xãy ra lỗi thì đừng vội restore trên itunes, tải <a href="https://www.tenorshare.com/products/reiboot.html" target="_blank">ReiBoot</a> và exit recovery mode rồi bắt đầu lại</p>
 							
 							<p>3.3 Cắm điện thoại vào máy tính, trên PowerShell gõ</p>
 							<pre><code>.\futurerestore.exe -t &lt;iOS SHSH2 blob&gt; -b &lt;Baseband file&gt; -p BuildManifest.plist -s &lt;SEP file&gt; -m BuildManifest.plist &lt;iOS IPSW File&gt;</code></pre>
@@ -232,6 +232,7 @@
 				<section id="four" class="wrapper style1-alt fullscreen fade-up">
 						<div class="inner">
 							<h2>Get in touch</h2>
+							<p>I could make an english vers if u want, just hit me up xD
 							<div class="split style1">
 								<section>
 									<form method="post" action="https://formspree.io/support@hieuvo.me">
@@ -250,7 +251,7 @@
 											</div>
 										</div>
 										<ul class="actions">
-											<li><a href="" class="button submit" target="_blank">Send Message</a></li>
+											<li><a href="" class="button submit">Send Message</a></li>
 										</ul>
 									</form>
 								</section>
