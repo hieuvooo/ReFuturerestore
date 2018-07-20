@@ -46,9 +46,10 @@
 							        <ul>
 								        <li>Công cụ này chỉ hổ trợ macOS và Windows, Linux không được hổ trợ tại thời điểm hiện tại.</li>
 								        <li>Công cụ này chỉ hoạt động trên các thiết bị 64bit (iPhone 5s trở lên).</li>
-								        <li>Khi chạy công cụ này sẽ xóa toàn bộ dữ liệu của bạn. Nên nhớ hãy backup trên iTunes nếu như bạn muốn dữ liệu ko bị mất.</li>
+								        <li>Khi chạy công cụ này sẽ xóa toàn bộ dữ liệu của bạn. Nên nhớ hãy backup trên iTunes nếu như bạn muốn dữ liệu không bị mất.</li>
+										<li>Cần phải có iTunes (vì PC cần driver của iTunes để giao tiếp với iPhone).</li>
 								        <li>Và tất nhiên điện thoại bạn phải Jailbreak.</li>
-										<li>Mình sẽ không chịu trách nhiệm nếu bạn ko làm đúng theo hướng dẫn của mình.</li>
+										<li>Mình sẽ không chịu trách nhiệm nếu bạn không làm đúng theo hướng dẫn của mình.</li>
   				                    </ul>
 								</div>
 							</div>
@@ -82,66 +83,69 @@
 								</section>
 							</div>						
 							<h1 class="major"></h1>
+							<div class="video-container"><iframe src="https://www.youtube.com/embed/5tGPyR2NDWA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><br>
+							<p style="text-align:center">Note: Ở tutorial này mình sẽ Re-Restore iOS 11.3.1 trên iP5S</p>
+							
 							<h2>1. Chuẩn bị</h2>
 							
-							<p>1.1 Tạo một Folder tên là <strong>Futurerestore</strong>. Đây là thư mục bạn để tất cả các files để dễ thuận tiện trong quá trình làm</p>
+							<p>1.1 Tạo một Folder tên là <strong>Futurerestore</strong>. Đây là thư mục bạn để tất cả các files để dễ thuận tiện trong quá trình làm.</p>
 							
-							<p>1.2 Tải 2 bản iPSW một firmware đang sign mới nhất và một firmware bạn muốn <strong>Futurerestore</strong></p>
+							<p>1.2 Tải 2 bản iPSW một firmware đang sign mới nhất và một firmware bạn muốn <strong>Futurerestore.</strong></p>
 							<a href="http://bit.ly/2NKGTbs" class="button primary icon fa-download" target="_blank">iOS</a>
 							<br><br>
 							
-							<p>1.3 Bỏ cả 2 vào thư mục <strong>Futurerestore</strong></p>
+							<p>1.3 Bỏ cả 2 vào thư mục <strong>Futurerestore</strong>.</p>
 							
-							<p>1.4 Đổi đuôi firmware mới nhất từ <strong>".ipsw"</strong> thành <strong>".zip"</strong></p>
+							<p>1.4 Đổi đuôi firmware mới nhất từ <strong>".ipsw"</strong> thành <strong>".zip"</strong>.</p>
 							<span class="image fit"><img src="images/1.4.gif"/></span><br><!-- 60fps WOW Such frame much smooth -->
 							
-							<p>1.5 Mở zip và copy file <strong>BuildManifest.plist</strong> ra ngoài</p>
+							<p>1.5 Mở zip và copy file <strong>BuildManifest.plist</strong> ra ngoài.</p>
 							<span class="image fit"><img src="images/1.5.gif"/></span><br>
 							
-							<p>1.6 Vào trang <a href="http://bit.ly/2JrD8UV"><strong>The iPhone Wiki</strong></a> kéo xuống tới phần iPhone của bạn và tìm số baseband của bản mới nhất <br>→ Ví dụ firmware 11.4.1 mới nhất của iP5S có baseband là <strong>8.55.00</strong></p>
+							<p>1.6 Vào trang <a href="http://bit.ly/2JrD8UV"><strong>The iPhone Wiki</strong></a> kéo xuống tới phần iPhone của bạn và tìm số baseband của bản mới nhất. <br>→ Ví dụ firmware 11.4.1 mới nhất của iP5S có baseband là <strong>8.55.00</strong></p>
 							<span class="image fit"><img src="images/1.6.PNG"/></span><br>
 							
-							<p>1.7 Vào <strong>Firmware</strong> chọn theo phiên bản baseband của bạn có đuôi là <strong>".bbfw"</strong> và copy ra ngoài <br>→ Ví dụ 11.4.1 có baseband là <strong>8.55.00</strong> thì mình sẽ chọn <strong>Mav7Mav8-8.55.00.Release.bbfw</strong></p>
+							<p>1.7 Vào <strong>Firmware</strong> chọn theo phiên bản baseband của bạn có đuôi là <strong>".bbfw"</strong> và copy ra ngoài. <br>→ Ví dụ 11.4.1 có baseband là <strong>8.55.00</strong> thì mình sẽ chọn <strong>Mav7Mav8-8.55.00.Release.bbfw</strong></p>
 							<span class="image fit"><img src="images/1.7.gif"/></span><br>
 							
 							<p>1.8 Tải <a href="https://apple.co/2mnsRA3"><strong>Battery Memory System Status Monitor</strong></a></p>
 							<span class="image fit"><img src="images/1.8.JPG"/></span><br>
 							
-							<p>1.9 Mở ứng dụng và chọn phần <strong>System</strong> ngay trên cùng, bạn sẽ thấy <strong>Device Model</strong> của bạn</p>
+							<p>1.9 Mở ứng dụng và chọn phần <strong>System</strong> ngay trên cùng, bạn sẽ thấy <strong>Device Model</strong> của bạn.</p>
 							<span class="image fit"><img src="images/1.9.JPG"/></span><br>
 							
-							<p>1.10 Vào tiếp <strong>all_flash</strong>, kéo xuống dưới cùng bạn sẽ thấy một loạt file có tên là <strong>sep-firmware</strong>, copy file sep có đuôi <strong>".imp4"</strong> trùng với Device model của bạn ở <strong>bước 1.9</strong></p>
+							<p>1.10 Vào tiếp <strong>all_flash</strong>, kéo xuống dưới cùng bạn sẽ thấy một loạt file có tên là <strong>sep-firmware</strong>, copy file sep có đuôi <strong>".imp4"</strong> trùng với Device model của bạn ở <strong>bước 1.9</strong>.</p>
 							<span class="image fit"><img src="images/1.10.gif"/></span><br>
 							
-							<p>1.11 Tải <strong>shsh</strong> của phiên bản bạn muốn Futurerestore (Nếu bạn dùng tsschecker để lưu shsh thì vào <strong>tsssaver</strong> để check xem shsh của bạn có valid hay không</p>
+							<p>1.11 Tải <strong>shsh</strong> của phiên bản bạn muốn Futurerestore (Nếu bạn dùng tsschecker để lưu shsh thì vào <strong>tsssaver</strong> để check xem shsh của bạn có valid hay không.</p>
 							<a href="https://tsssaver.1conan.com/check.php" class="button primary" target="_blank">Kiểm tra SHSH</a><br><br>
 							<span class="image fit"><img src="images/1.11.gif"/></span><br>
 							
-							<p>1.12 Tải <strong>Futurerestore fork</strong> của <strong>encounter</strong> (Nếu bạn tải bản chính chủ của tihmstar thì nên xoá đi vì nó không hoạt trên iOS 11)</p>
+							<p>1.12 Tải <strong>Futurerestore fork</strong> của <strong>encounter</strong> (Nếu bạn tải bản chính chủ của tihmstar thì nên xoá đi vì nó không hoạt trên iOS 11).</p>
 							<a href="http://bit.ly/2zzgGJY" class="button primary icon fa-download" target="_blank">Futurerestore</a><br><br>
 							<span class="image fit"><img src="images/1.12.PNG"/></span><br>
 							
-							<p>1.13 Copy <strong>shsh</strong> và extract <strong>Futurerestore fork</strong> đã tải vào <strong>Futurerestore</strong></p>
+							<p>1.13 Copy <strong>shsh</strong> và extract <strong>Futurerestore fork</strong> đã tải vào <strong>Futurerestore</strong>.</p>
 							<span class="image fit"><img src="images/1.13.PNG"/></span><br>
 							
-							<p>1.14 Xoá file zip và đổi tên file để dễ phân biệt</p>
+							<p>1.14 Xoá file zip và đổi tên file để dễ phân biệt.</p>
 							<span class="image fit"><img src="images/1.14.gif"/></span><br>
 							
 							<h2>2. Set nonce</h2>
 							
-							<p>2.1 Mở file shsh của bạn dưới notepad, <strong>ctrl + f</strong> rồi gõ <strong>"gene"</strong>, tìm đến "<strong>&lt;string&gt;0x......&lt;/string&gt;</strong>"<br>→ Ví dụ shsh 11.3.1 của mình có nonce là <strong>0xf44116d95df08a43</strong></p>
+							<p>2.1 Mở file shsh của bạn dưới notepad, <strong>ctrl + f</strong> rồi gõ <strong>"gene"</strong>, tìm đến "<strong>&lt;string&gt;0x......&lt;/string&gt;</strong>".<br>→ Ví dụ shsh 11.3.1 của mình có nonce là <strong>0xf44116d95df08a43</strong></p>
 							<span class="image fit"><img src="images/2.1.gif"/></span><br>
 							
-							<p><strong>2.2 Set nonce</strong></p>
+							<h3><strong>2.2 Set nonce</strong></h3>
 							<ul>
-							    <li>iOS 10 → 10.2.1: Mở MTerminal hoặc NewTerm gõ</li><br>
+							    <li><strong>iOS 10 → 10.2.1:</strong> Mở MTerminal hoặc NewTerm gõ</li><br>
 								<pre><code>Hieus-iphone:~ mobile$ su <br>password: alpine <br>Hieus-iphone:/var/mobile root# nvram com.apple.System.boot-nonce=0x.....'  </code></pre>
 								<p>
 				                Ví dụ shsh của mình có generator là <strong>0x66fd9ae6a407ddfa</strong> thì sẽ ghi là <strong>nvram com.apple.System.boot-nonce=0x66fd9ae6a407ddfa</strong>
 				                </p>
 								<span class="image fit"><img src="images/2.2.JPG"/></span>
 								<p>
-				                Gõ <strong>nvram -p</strong> để check lại
+				                Gõ <strong>nvram -p</strong> để check lại.
 				                </p>
 								<span class="image fit"><img src="images/2.2.1.JPG"/></span>
 							</ul>											
@@ -150,26 +154,11 @@
 					
 					<section id="one" class="wrapper style2 spotlights">
 						<section>
-							<a class="image"><img src="images/2.2.1.jpg" data-position="center center"/></a>
-							<div class="content">
-								<div class="inner">
-									<h2>iOS 10 → 10.2.1</h2>
-									<p>Mở MTerminal hoặc NewTerm gõ</p>
-									<ul>
-							        	<pre><code>Hieus-iphone:~ mobile$ su <br>password: alpine <br>Hieus-iphone:/var/mobile root# nvram com.apple.System.boot-nonce=0x.....'  </code></pre>
-							        	<p>Ví dụ shsh của mình có generator là <strong>0x66fd9ae6a407ddfa</strong> thì sẽ ghi là <strong>nvram com.apple.System.boot-nonce=0x66fd9ae6a407ddfa</strong></p>
-							        	<p>Gõ <strong>nvram -p</strong> để check lại</p>
-							        </ul>
-								</div>
-							</div>
-						</section>
-						
-						<section>
 							<a class="image"><img src="images/2.2.2.jpg" data-position="center center"/></a>
 							<div class="content">
 								<div class="inner">
 									<h2>iOS 10.3 → 10.3.3</h2>
-									<p>Cài v0rtexNonce qua Cydia Impactor hoặc Ext3nder Installer rồi mở app ghi đoạn generator của bạn vào</p>
+									<p>Cài v0rtexNonce qua Cydia Impactor hoặc Ext3nder Installer rồi mở app ghi đoạn generator của bạn vào.</p>
 									<ul class="actions">
 										<li><a href="https://github.com/arx8x/v0rtexNonce/releases" class="button primary icon fa-download" target="_blank">v0rtexNonce</a></li>
 									</ul>
@@ -193,10 +182,9 @@
 							<div class="content">
 								<div class="inner">
 									<h2>iOS 11.2 → 11.3.1/11.4b3</h2>
-									<p>Cài noncereboot1131 hoặc electra1131 qua Cydia Impactor hoặc Ext3nder Installer rồi làm tương tự như bước trên</p>
+									<p>Cài noncereboot1131 hoặc electra1131 qua Cydia Impactor hoặc Ext3nder Installer rồi làm tương tự như bước trên.</p>
 									<ul class="actions">
 										<li><a href="http://pwn20wnd.science/noncereboot1131UI/noncereboot1131UI.ipa" class="button primary icon fa-download" target="_blank">noncereboot1131</a></li>
-										<li><a href="itms-services://?action=download-manifest&url=https://cdn.ipas.fun/plists/Electra1131_MPTCP.plist" class="button primary icon fa-download" target="_blank">electra1131</a></li>
 									</ul>
 								</div>
 							</div>
@@ -207,21 +195,26 @@
 						<div class="inner">
 							<h2>3. Tiến hành</h2>
 							
-							<p>3.1 Shift + chuột phải chọn Open PowerShell window here (hoặc cmd) rồi gõ <code>.\futurerestore.exe</code> để kiểm tra futurerestore có báo lỗi gì ko</p>
+							<p>3.1 Shift + chuột phải chọn Open PowerShell window here (hoặc cmd) rồi gõ <code>.\futurerestore.exe</code> để kiểm tra futurerestore có báo lỗi gì không.</p>
 							<span class="image fit"><img src="images/3.1.gif"/></span><br>
 							
 							<p>3.2 Cắm điện thoại vào máy tính, tiếp tục trên PowerShell gõ <code>.\futurerestore.exe -w -t &lt;shsh của bạn&gt;</code></p>
-							<p>Nếu <strong>"waiting for nonce"</strong> trùng với <strong>"Got ApNonce from device"</strong> thì bạn đã set nonce thành công, còn nếu dòng <strong>"Got ApNonce from device"</strong> lặp lại liên tục thì bạn đã set sai generator</p>
+							<p>Nếu <strong>"waiting for nonce"</strong> trùng với <strong>"Got ApNonce from device"</strong> thì bạn đã set nonce thành công, còn nếu dòng <strong>"Got ApNonce from device"</strong> lặp lại liên tục thì bạn đã set sai generator.</p>
 							<span class="image fit"><img src="images/3.2.gif"/></span><br>
 							
-							<p>★ Đây là những bước cuối cùng kiểm tra kỹ đã đủ file chưa, ko dùng dây cáp lõng hoặc không có mfi (vì cáp không có chứng chỉ mfi ko giao tiếp đc iPhone ở recovery mode), nếu xãy ra lỗi thì đừng vội restore trên itunes, tải <a href="https://www.tenorshare.com/products/reiboot.html" target="_blank">ReiBoot</a> và exit recovery mode rồi bắt đầu lại</p>
+							<p>★ Đây là bước cuối cùng kiểm tra kỹ đã đủ file chưa, không dùng dây cáp lõng hoặc không có mfi (vì cáp không có chứng chỉ mfi không giao tiếp đc iPhone ở recovery mode), nếu xãy ra lỗi thì đừng vội restore trên itunes, tải <a href="https://www.tenorshare.com/products/reiboot.html" target="_blank">ReiBoot</a> và exit recovery mode rồi bắt đầu lại.</p>
 							
 							<p>3.3 Cắm điện thoại vào máy tính, trên PowerShell gõ</p>
 							<pre><code>.\futurerestore.exe -t &lt;iOS SHSH2 blob&gt; -b &lt;Baseband file&gt; -p BuildManifest.plist -s &lt;SEP file&gt; -m BuildManifest.plist &lt;iOS IPSW File&gt;</code></pre>
 							<p>Trong đó dấu "&lt;&gt;" là tên file của bạn. Ví dụ của mình là:</p>
 							<pre><code>.\futurerestore.exe -t blob.shsh2 -b baseband.bbfw -p BuildManifest.plist -s sep.im4p -m BuildManifest.plist 11.3.1.ipsw</code></pre>
-							<p>★ Tip: khi gõ lệnh chỉ cần nhấn nút tab thì nó sẽ tự động ghi toàn bộ tên file cho mình</p>
+							<p>★ Tip: khi gõ lệnh chỉ cần nhấn nút tab thì nó sẽ tự động ghi toàn bộ tên file.</p>
 							
+							<p>Sau khi gõ xong lệnh thì kiểm tra lại xem thiếu gì không (nhất là file baseband vs sep), nếu không thì nhấn enter rồi chờ cho đến khi xong (Trong quá trình futurerestore đừng đụng vào điện thoại hoặc dây cáp, nếu bị lỏng có thể gây mất kết nối trong quá trình Futurerestore và buộc phải lên bản mới nhất qua iTunes).</p> 
+							<p>Nếu báo lỗi gì thì contact mình qua messenger hoặc mail, link mình để phía dưới.</p>
+							
+							
+							<div class="video-container"><iframe src="https://www.youtube.com/embed/5tGPyR2NDWA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
 						</div>
 					</section>
 
