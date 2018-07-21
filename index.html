@@ -55,27 +55,29 @@
 									<h1 class="major"></h1>
 									<h2>Nếu bạn đang ở iOS... và muốn lên 11.3.1:</h2>
 									<ul>
-								        <li>iOS 8: Làm y hệt cách này (jailbreak + shsh)</li>
-								        <li>iOS 9 → 9.3.3: Làm y hệt cách này nhưng set nonce bằng <a href="http://bit.ly/2mvZXh3" target="_blank">nonceEnabler</a> (jailbreak + shsh)</li>
-										<li>iOS 10 → 10.2: Làm y hệt cách này (jailbreak + shsh)</li>
-										<li>iOS 10.3 → 10.3.3: Làm y hệt cách này nhưng set nonce bằng app (jailbreak + shsh)</li>
-										<li>iOS 11: Làm y hệt cách này nhưng set nonce bằng app (jailbreak + shsh)</li>
+								        <li>iOS 8: Làm y hệt cách này (jailbreak + shsh).</li>
+								        <li>iOS 9 → 9.3.3: Làm y hệt cách này nhưng set nonce bằng <a href="http://bit.ly/2mvZXh3" target="_blank">nonceEnabler</a> (jailbreak + shsh).</li>
+										<li>iOS 10 → 10.2: Làm y hệt cách này (jailbreak + shsh).</li>
+										<li>iOS 10.3 → 10.3.3: Làm y hệt cách này nhưng set nonce bằng app (jailbreak + shsh).</li>
+										<li>iOS 11: Làm y hệt cách này nhưng set nonce bằng app (jailbreak + shsh).</li>
   				                    </ul>
 									<h1 class="major"></h1>
 									<h2>Nếu bạn đang ở iOS... và muốn Upgrade lên iOS... hoặc Downgrade xuống iOS...:</h2>
 									<ul>
-								        <li>Chip A7 (iP5S, iPad Air, iPad Mini 2;3): Có thể xuống iOS 10 nhưng ko làm theo cách này <a href="http://m.me/hieuvo.me" target="_blank">(Inbox mình)</a></li>
-								        <li>Chip A8 → A11 (iP6 → iPX): Nếu bạn muốn restore lại hoặc đang ở 11.3.1 muốn xuống iOS 10 hoặc 9: Ko thể vì Baseband và Sep đã bị khoá trên những bản này</li>
+								        <li>Chip A7 (iP5S, iPad Air, iPad Mini 2;3): Có thể xuống iOS 10 nhưng ko làm theo cách này <a href="http://m.me/hieuvo.me" target="_blank">(Inbox mình).</a></li>
+								        <li>Chip A8 → A11 (iP6 → iPX): Nếu bạn muốn restore lại hoặc đang ở 11.3.1 muốn xuống iOS 10 hoặc 9: Ko thể vì Baseband và Sep đã bị khoá trên những bản này.</li>
   				                    </ul>
 									<h1 class="major"></h1>
 									<h2>Sep và Baseband là gì?</h2>
 									<ul>
-									    <li>Sep là phần quản lý và lưu trữ TouchID, hay còn gọi là Secure Enclave (SEP OS)</li>
-										<li>Baseband là phần quản lý sóng ăn ten của sim (ipad wifi không cần dùng baseband vì làm gì có sim)</li>
+									    <li>Sep là phần quản lý và lưu trữ TouchID, hay còn gọi là Secure Enclave (SEP OS).</li>
+										<li>Baseband là phần quản lý sóng ăn ten của sim (ipad wifi không cần dùng baseband vì làm gì có sim).</li>
 									</ul>
 									<h1 class="major"></h1>
 									<h2>Vì sao chip A7 có thể xuống đc iOS 10 mà ko phải mấy chip khác?</h2>
 									<p>Vì chip A7 muốn lên iOS 11 bắt buộc phải lên iOS 10 (Ví dụ mình xài iP5S đang chạy iOS 9.3.3 và muốn lên iOS 11 bắc buộc mình phải update lên iOS 10 (vào cài đặt chung rồi update qua ota), nên đó là lý do vì sao Apple không khoá ota bản 10.3.3 (vẫn khoá bản restore qua iTunes) trên các thiết bị chạy chip A7. Và mọi người tận dụng lý do này để fake manifest iOS 10.3.3 để restore bất cứ phiên bản nào của iOS 10.</p>
+									
+									<br><br><p>Mình ưu tiên trải nghiệm nên bài viết không để quảng cáo hay coin miner nào hết. Copy thì nhớ credit mình là ok.</p>
 								</div>
 							</div>
 						</section>
@@ -233,6 +235,7 @@
 							<p>★ Tip: khi gõ lệnh chỉ cần nhấn nút tab thì nó sẽ tự động ghi toàn bộ tên file.</p>
 							
 							<p>Sau khi gõ xong lệnh thì kiểm tra lại xem thiếu gì không (nhất là file baseband vs sep), nếu không thì nhấn enter rồi chờ cho đến khi xong (Trong quá trình futurerestore đừng đụng vào điện thoại hoặc dây cáp, nếu bị lỏng có thể gây mất kết nối trong quá trình Futurerestore và buộc phải lên bản mới nhất qua iTunes).</p> 
+							<p>Nếu Futurerestore báo lỗi "failed with errorcode=-44" thì inbox mình nhé, đây là lỗi do img4tool trong futurerestore không đọc được shsh (vì từ iOS 11.3 trở lên apple gọp các thiết bị lại chung thành một bản iPSW).</p>
 							<p>Nếu báo lỗi gì thì contact mình qua messenger hoặc mail, link mình để phía dưới.</p>
 							
 							
