@@ -44,13 +44,38 @@
 								<div class="inner">
 									<h2>Lưu ý</h2>
 							        <ul>
-								        <li>Công cụ này chỉ hổ trợ macOS và Windows (64bit), Linux không được hổ trợ tại thời điểm hiện tại.</li>
+								        <li><strong>Bài viết không dàng cho những ai không có jailbreak hoặc SHSH (Tại thời điểm viết bài này chưa có jb cho iOS 11.4 trở lên).</strong></li>
+										<li>Công cụ này chỉ hổ trợ macOS và Windows (64bit), Linux không được hổ trợ tại thời điểm hiện tại.</li>
 								        <li>Công cụ này chỉ hoạt động trên các thiết bị 64bit (iPhone 5s trở lên).</li>
 								        <li>Khi chạy công cụ này sẽ xóa toàn bộ dữ liệu của bạn. Nên nhớ hãy backup trên iTunes nếu như bạn muốn dữ liệu không bị mất.</li>
 										<li>Cần phải có iTunes (vì PC cần driver của iTunes để giao tiếp với iPhone).</li>
 								        <li>Và tất nhiên điện thoại bạn phải Jailbreak.</li>
 										<li>Mình sẽ không chịu trách nhiệm nếu bạn không làm đúng theo hướng dẫn của mình.</li>
   				                    </ul>
+									<h1 class="major"></h1>
+									<h2>Nếu bạn đang ở iOS... và muốn lên 11.3.1:</h2>
+									<ul>
+								        <li>iOS 8: Làm y hệt cách này (jailbreak + shsh)</li>
+								        <li>iOS 9 → 9.3.3: Làm y hệt cách này nhưng set nonce bằng <a href="http://bit.ly/2mvZXh3" target="_blank">nonceEnabler</a> (jailbreak + shsh)</li>
+										<li>iOS 10 → 10.2: Làm y hệt cách này (jailbreak + shsh)</li>
+										<li>iOS 10.3 → 10.3.3: Làm y hệt cách này nhưng set nonce bằng app (jailbreak + shsh)</li>
+										<li>iOS 11: Làm y hệt cách này nhưng set nonce bằng app (jailbreak + shsh)</li>
+  				                    </ul>
+									<h1 class="major"></h1>
+									<h2>Nếu bạn đang ở iOS... và muốn Upgrade lên iOS... hoặc Downgrade xuống iOS...:</h2>
+									<ul>
+								        <li>Chip A7 (iP5S, iPad Air, iPad Mini 2;3): Có thể xuống iOS 10 nhưng ko làm theo cách này <a href="http://m.me/hieuvo.me" target="_blank">(Inbox mình)</a></li>
+								        <li>Chip A8 → A11 (iP6 → iPX): Nếu bạn muốn restore lại hoặc đang ở 11.3.1 muốn xuống iOS 10 hoặc 9: Ko thể vì Baseband và Sep đã bị khoá trên những bản này</li>
+  				                    </ul>
+									<h1 class="major"></h1>
+									<h2>Sep và Baseband là gì?</h2>
+									<ul>
+									    <li>Sep là phần quản lý và lưu trữ TouchID, hay còn gọi là Secure Enclave (SEP OS)</li>
+										<li>Baseband là phần quản lý sóng ăn ten của sim (ipad wifi không cần dùng baseband vì làm gì có sim)</li>
+									</ul>
+									<h1 class="major"></h1>
+									<h2>Vì sao chip A7 có thể xuống đc iOS 10 mà ko phải mấy chip khác?</h2>
+									<p>Vì chip A7 muốn lên iOS 11 bắt buộc phải lên iOS 10 (Ví dụ mình xài iP5S đang chạy iOS 9.3.3 và muốn lên iOS 11 bắc buộc mình phải update lên iOS 10 (vào cài đặt chung rồi update qua ota), nên đó là lý do vì sao Apple không khoá ota bản 10.3.3 (vẫn khoá bản restore qua iTunes) trên các thiết bị chạy chip A7. Và mọi người tận dụng lý do này để fake manifest iOS 10.3.3 để restore bất cứ phiên bản nào của iOS 10.</p>
 								</div>
 							</div>
 						</section>
@@ -212,6 +237,7 @@
 							
 							
 							<div class="video-container"><iframe src="https://www.youtube.com/embed/5tGPyR2NDWA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+							<br><p style="text-align:center">Sorry ae clip trên mình làm từ hồi iOS 10, nhưng cách làm đấy vẫn giống y hệt cách làm trong bài hướng dẫn này chỉ khác cách set nonce từ iOS 10.3 trở lênn là phải set nonce bằng app (đơn giản hơn cách 10.2)</p>
 						</div>
 					</section>
 
